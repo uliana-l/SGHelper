@@ -1,0 +1,14 @@
+{
+  "name": "VFX coordinating extension",
+  "description": "This extension will copy.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": "images/logo.png",
+    "default_title": "Click to copy items to clipboard"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
