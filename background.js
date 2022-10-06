@@ -4,3 +4,12 @@ chrome.action.onClicked.addListener(tab => {
     files: ['content.js']
   });
 });
+
+chrome.runtime.onMessage.addListener(message => {
+  chrome.notifications.create('copiedToClipboard', {
+    type: 'basic',
+    iconUrl: 'images/logo.png',
+    title: 'Helper',
+    message
+  }); 
+});

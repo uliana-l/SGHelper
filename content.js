@@ -7,5 +7,7 @@
   }
 
   const formattedContent = itemsContent.join('\n');
-  navigator.clipboard.writeText(formattedContent).then(() => { alert('Copied to clipboard'); })
+  navigator.clipboard.writeText(formattedContent).then(() => {
+    chrome.runtime.sendMessage('Copied to clipboard');
+  })
 })();

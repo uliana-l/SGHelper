@@ -10,7 +10,7 @@
     "default_icon": "images/logo.png",
     "default_title": "Click to copy items to clipboard"
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "notifications"],
   "background": {
     "service_worker": "background.js"
   }
