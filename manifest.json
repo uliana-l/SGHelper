@@ -1,6 +1,6 @@
 {
   "name": "VFX coordinating extension",
-  "description": "This extension will copy.",
+  "description": "This software will help you copy shot lists from ShotGrid. Made by Uliana Lobanova and Dmytro Danchuk.",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
