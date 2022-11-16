@@ -10,8 +10,21 @@
     "default_icon": "images/logo.png",
     "default_title": "Click to copy items to clipboard"
   },
-  "permissions": ["activeTab", "scripting", "notifications"],
+  "permissions": ["activeTab", "scripting"],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/logo.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["toastify.min.js", "content.js"],
+      "css": ["toastify.min.css", "content.css"]
+    }
+  ]
 }

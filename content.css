@@ -1,0 +1,13 @@
+.vfx-extension-toast {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: #1b1b1b;
+  border-radius: 5px;
+}
+
+.vfx-extension-toast .toastify-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0 1rem 0 0;
+}
