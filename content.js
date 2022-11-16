@@ -1,14 +1,10 @@
 const showMessage = () => {
   const message = 'Copied to clipboard';
-
-  let toastContainer = document.createElement("div");
-  toastContainer.innerText = message;
-  toastContainer.className = "vfx-extension-toast";
-  document.body.appendChild(toastContainer);
-  
-  // setTimeout(()=>{
-  //     document.body.removeChild(toastContainer);
-  // }, 2000);
+  Toastify({
+    text: message,
+    avatar: chrome.runtime.getURL('images/logo.png'),
+    className: 'vfx-extension-toast',
+  }).showToast();
 };
 
 const copyContentToClipboard = () => {
@@ -20,7 +16,6 @@ const copyContentToClipboard = () => {
   }
 
   const formattedContent = itemsContent.join('\n');
-
   navigator.clipboard.writeText(formattedContent).then(showMessage);
 };
 
