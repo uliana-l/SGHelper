@@ -14,7 +14,7 @@
   "web_accessible_resources": [
     {
       "resources": ["images/logo.png"],
-      "matches": ["*://shotgunstudio.com*"]
+      "matches": ["*://shotgunstudio.com/*"]
     }
   ],
   "background": {
@@ -22,7 +22,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://shotgunstudio.com*"],
+      "matches": ["*://shotgunstudio.com/*"],
       "js": ["toastify.min.js", "content.js"],
       "css": ["toastify.min.css", "content.css"]
     }
