@@ -1,5 +1,5 @@
 {
-  "name": "VFX coordinating extension",
+  "name": "SGHelper",
   "description": "This software will help you copy shot lists from ShotGrid. Made by Uliana Lobanova and Dmytro Danchuk.",
   "version": "1.0",
   "manifest_version": 3,
@@ -14,7 +14,7 @@
   "web_accessible_resources": [
     {
       "resources": ["images/logo.png"],
-      "matches": ["<all_urls>"]
+      "matches": ["*://shotgunstudio.com*"]
     }
   ],
   "background": {
@@ -22,7 +22,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["*://shotgunstudio.com*"],
       "js": ["toastify.min.js", "content.js"],
       "css": ["toastify.min.css", "content.css"]
     }
